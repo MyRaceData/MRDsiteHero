@@ -2,7 +2,7 @@
   "name": "MRD Hero banner",
   "component": false,
   "about_url": null,
-  "license_url": null,
+  "license_url": "https://github.com/MyRaceData/MRDsiteHero/blob/main/LICENSE",
   "authors": null,
   "theme_version": "0.1.0",
   "minimum_discourse_version": null,
