@@ -1,0 +1,105 @@
+#main {
+    background-image: linear-gradient(to top, black, 95%, transparent), url('https://www.myracedata.com/images/bg.jpg');
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+#main-outlet {
+    /*background-color: rgba(0, 0, 0, 0.75);*/
+    background-image: url('https://www.myracedata.com/images/mobg.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+/* 
+feature topic homepage stuff
+*/
+.featured-topics__topic-tag {
+    display: none;
+}
+
+.featured-topics__wrapper .topic-author {
+    display: none;
+}
+
+.featured-topics__wrapper .category-link {
+    display: none;
+}
+
+.featured-topics__topic-container.thumbnail .topic-excerpt {
+    display: contents;
+}
+
+.featured-topics__topic-details {
+background-color: rgb(0,0,0);
+}
+/////.featured-topics__topics-wrapper
+
+/////// make side bar transparent
+.sidebar-wrapper {
+    background-color: rgb(0,0,0,.5);
+}
+
+///////// style upcoming events
+.upcoming-events-list__event-date .month {
+    color: rgba(255, 0, 0, 1);
+}
+.upcoming-events-list__event-time {
+    display: none
+}
+
+////////////////////////////
+/*
+.category-breadcrumb stuff
+*/
+
+.category-breadcrumb {
+display: none
+}
+
+.breadcrumbs {
+    background: rgb(0, 0, 0, 0);
+}
+.ww {
+    border: 2px solid #d7d7d7;
+    border-radius: 8px;
+    margin-top: .3rem;
+}
+.mrd-widget-container {
+  display: grid;
+  /* Automatically calculates columns; drops them to a new row on mobile */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+.mrd-widget {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  flex-grow: 1;
+}
+/* Stretch the link and the widget wrapper */
+.mrd-widget > a, 
+#weather-widget-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+}
+
+/* Stretch the newly added weather-card */
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Push the details section to the absolute bottom */
+.weather-details {
+  margin-top: auto !important;
+}
