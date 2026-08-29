@@ -1,0 +1,16 @@
+<script>
+  window.loadWeatherWidget = async function() {
+    try {
+      const response = await fetch('https://myracedata.com/widget.php');
+      if (!response.ok) throw new Error('Failed to load weather data.');
+      document.getElementById('weather-widget-container').innerHTML = await response.text();
+    } catch (error) {
+      document.getElementById('weather-widget-container').innerHTML = 'Weather update unavailable.';
+    }
+  }
+  document.addEventListener('DOMContentLoaded', loadWeatherWidget);
+</script>
+  <link rel="stylesheet" href='https://myracedata.com/css/weather-icons.css'>
+  <link rel="stylesheet" href='href="https://myracedata.com/css/weather-icons.min.css'>
+  <link rel="stylesheet" href='href="https://myracedata.com/css/weather-icons-wind.min.css'>
+  <link rel="stylesheet" href='href="https://myracedata.com/css/weather-icons-wind.css'>
