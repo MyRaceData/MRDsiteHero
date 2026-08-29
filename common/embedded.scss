@@ -1,0 +1,7 @@
+.topics-list .topic-list-item .topic-column-wrapper .topic-column.featured-image-column .topic-featured-image img {
+    max-width: 80px;
+    max-height: 60px;
+}
+.topics-list .topic-list-item .topic-column-wrapper .topic-column.details-column .topic-last-posted-at, .topics-list .topic-list-item .topic-column-wrapper .topic-column.details-column .topic-created-at, .topics-list .topic-list-item .topic-column-wrapper .topic-column.details-column .topic-stats {
+    display: none;    
+}
